@@ -13,6 +13,7 @@ import IdentityList from 'IdentityList';
 import IdentityListBlock from 'IdentityList';
 import MenuLink from 'MenuLink';
 import NavigationBar from 'NavigationBar';
+import Hero from 'Hero';
 
 export {
   Box,
@@ -25,5 +26,6 @@ export {
   IdentityList,
   IdentityListBlock,
   MenuLink,
-  NavigationBar
+  NavigationBar,
+  Hero
 };

@@ -17,6 +17,7 @@ export const Hero = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   ${setBg}
 `
 export const HeroTitle = styled(ts.Header1)`
@@ -33,7 +34,7 @@ export const HeroAligner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 500px;
+  height: 100%;
 `
 
 export const HeroAlignerItem = styled.div`

@@ -5,22 +5,20 @@
 
 import React from 'react'
 
-import { NavigationBar, MenuLink } from '../lib/my-awesome-library';
+import { Hero } from '../lib/my-awesome-library';
+
+import bg from '../assets/dsconf-wide.jpg'
+import logo from '../assets/dsconf-logo.png'
 
 const Home = () => {
   return (
     <div>
-      <NavigationBar brand={{ link: "https://dsconference.com/", img: "../assets/dsconf-logo-small.png" }}>
-        <MenuLink active activeColor="cyan">
-          Home
-        </MenuLink>
-        <MenuLink>
-          About
-        </MenuLink>
-        <MenuLink>
-          Event Overview
-        </MenuLink>
-      </NavigationBar>
+      <Hero background={bg}
+        logoImage={logo}
+        title="A DESIGN SYSTEMS CONFERENCE"
+        subTitle="MARCH 14TH - 15TH"
+        subTitle2="2018 IN HELSINKI, FINLAND"
+      />
     </div>
   )
 }
