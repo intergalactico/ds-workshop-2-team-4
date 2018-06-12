@@ -24,11 +24,12 @@ export const Hero = styled.div`
   ${setBg}
 `
 export const HeroTitle = styled(ts.Header1)`
-  color: white;
+  color: #eedf21;
+  font-family: 'ArialRoundedMT', 'Lato','Open sans';
   text-transform: uppercase;
 `
 export const HeroSubtitle = styled(ts.Lato)`
-  color: white;
+  color: #eedf21;
   text-transform: uppercase;
   flex: none;
   margin: 0;

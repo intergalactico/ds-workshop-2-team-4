@@ -8,7 +8,7 @@ import React from 'react'
 import { Hero, IdentityList, IdentityListBlock, Section, SectionHeader, SectionText, TeamMember } from '../lib/my-awesome-library';
 
 import bg from '../assets/dsconf-wide.jpg'
-import logo from '../assets/dsconf-logo.png'
+import logo from '../assets/crown.svg'
 import speaker from '../assets/anne-jina.jpg'
 
 const Home = () => {

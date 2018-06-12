@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1201" height="1199" viewBox="0 0 1201 1199">
+    <g fill="none" fill-rule="evenodd" transform="translate(156 97)">
+        <path stroke="#E7D70C" stroke-width="22" d="M31 98.238V994h827V100.524L676.653 319.455 449.757 85.985 233.971 319.23 31 98.238z"/>
+        <text fill="#E7D70C" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="300">
+            <tspan x="257.336" y="664">DS</tspan> <tspan x="233" y="949.52" font-size="140">CONF</tspan> 
+        </text>
+        <circle cx="451" cy="25" r="25" fill="#E7D70C"/>
+        <circle cx="865" cy="25" r="25" fill="#E7D70C"/>
+        <circle cx="25" cy="25" r="25" fill="#E7D70C"/>
+    </g>
+</svg>
