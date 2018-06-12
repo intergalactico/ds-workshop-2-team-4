@@ -18,7 +18,6 @@ export const Hero = styled.div`
   display: flex;
   flex-direction: column;
   ${setBg}
-  
 `
 export const HeroTitle = styled(ts.Header1)`
   color: white;

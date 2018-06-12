@@ -8,6 +8,7 @@ const Hero = (props) => {
     <s.Hero background={props.background}>
       <s.HeroAligner>
         <s.HeroAlignerItem>
+        <img src={props.logoImage} height="200" />
           <s.HeroTitle>{props.title}</s.HeroTitle>
           <s.HeroSubtitle>{props.subTitle}</s.HeroSubtitle>
           {props.subTitle2.toString().length > 0 && (
@@ -24,7 +25,8 @@ Hero.propTypes = {
   title: string,
   subTitle: string,
   subTitle2: string,
-  background: string
+  background: string,
+  logoImage: string
 };
 
 export default Hero
