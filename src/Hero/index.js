@@ -14,7 +14,7 @@ const Hero = (props) => {
           {props.subTitle2.toString().length > 0 && (
             <s.HeroSubtitle>{props.subTitle2}</s.HeroSubtitle>
           )}
-          <s.HeroButton>Tekstiä</s.HeroButton>
+          <s.HeroButton>{props.buttonText}</s.HeroButton>
         </s.HeroAlignerItem>
       </s.HeroAligner>
     </s.Hero>
@@ -26,7 +26,8 @@ Hero.propTypes = {
   subTitle: string,
   subTitle2: string,
   background: string,
-  logoImage: string
+  logoImage: string,
+  buttonText: string
 };
 
 export default Hero

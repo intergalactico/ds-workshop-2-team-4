@@ -7,12 +7,13 @@ import Hero from '.'
 import heroBg from '../../assets/dsconf-wide.jpg';
 import heroLogo from '../../assets/dsconf-logo.png';
 
-storiesOf('Hero', module)
+storiesOf('Hero', module) // eslint-disable-line no-undef
   .add('index', withInfo(`Hero is hero`)(() => (
     <Hero 
       title='A Design Systems conference'
       subTitle={'March 14th - 15th, 2018'}
       subTitle2={'In Helsinki, Finland'}
       background={heroBg}
-      logoImage={heroLogo} />
+      logoImage={heroLogo}
+      buttonText={'Button text'} />
   )))
