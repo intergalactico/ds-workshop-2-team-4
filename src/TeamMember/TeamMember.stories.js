@@ -22,16 +22,28 @@ storiesOf('TeamMember', module) // eslint-disable-line no-undef
  The TeamMember component renders a card of a team member. It contains
  their avatar, name, title, and links to social networks.
     `)(() => (
-      <TeamMember
-        name="Donald Duck"
-        title="Director of Everything"
-        social={{
-          twitter: 'donaldducknl',
-          linkedin: 'https://www.linkedin.com/company/the-walt-disney-company/'
-        }}
-        avatar={avatar}
-      />
-  )))
+        <React.Fragment>
+          <TeamMember
+            name="Donald Duck"
+            title="Director of Everything"
+            social={{
+              twitter: 'donaldducknl',
+              linkedin: 'https://www.linkedin.com/company/the-walt-disney-company/'
+            }}
+            avatar={avatar}
+          />
+          <TeamMember
+            name="Donald Duck 2"
+            title="Director of Everything"
+            social={{
+              twitter: 'donaldducknl',
+              linkedin: 'https://www.linkedin.com/company/the-walt-disney-company/'
+            }}
+            avatar={avatar}
+            description="For the past 10 years, Angelos has been working with startups and product, both in early and high growth stage."
+          />
+        </React.Fragment>
+      )))
   .add('no social networks',
     withInfo()(() => (
       <TeamMember
@@ -39,4 +51,4 @@ storiesOf('TeamMember', module) // eslint-disable-line no-undef
         title="Director of Everything"
         avatar={avatar}
       />
-  )));
+    )));

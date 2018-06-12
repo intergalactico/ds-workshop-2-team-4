@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { string, object } from 'prop-types';
+import { number, string, object } from 'prop-types';
 
 /*
  * The TeamMember component has its own styles but also it used the styles
@@ -25,7 +25,7 @@ const TeamMember = (props) => {
    * Cards for different people output different information. This is communicated
    * to the component with properties.
    */
-  const { name, title, social, avatar } = props;
+  const { name, title, social, avatar, description, itemWidth } = props;
 
   /*
    * The component gets a list of social icons as an object. They need to be rendered as
@@ -33,36 +33,45 @@ const TeamMember = (props) => {
    * the styled-components for each icon.
    */
   const socialItems = social ? Object.keys(social).map(key => {
-      let link = social[key];
-      if (key === 'twitter') {
-        link = `https://twitter.com/@${social[key]}`;
-      }
+    let link = social[key];
+    if (key === 'twitter') {
+      link = `https://twitter.com/@${social[key]}`;
+    }
 
-      return (<s.IconListItem key={'social-icon-item-' + key}>
-          <s.IconLink href={link} target="_blank"><Icon name={key}/></s.IconLink>
-        </s.IconListItem>);
-    }) : null;
+    return (<s.IconListItem key={'social-icon-item-' + key}>
+      <s.IconLink href={link} target="_blank"><Icon name={key} /></s.IconLink>
+    </s.IconListItem>);
+  }) : null;
   const socialList = social ? <s.IconList>{socialItems}</s.IconList> : null;
+  const descriptionItem = description ? <s.TeamMemberDescription>
+    {description}
+  </s.TeamMemberDescription> : null;
 
   /*
    * The container for the card is the TeamMember styled-component, which brings
    * some styles. Inside, it renders the avatar and text info.
    */
   return (
-    <s.TeamMember>
-      <img src={avatar} width="200" />
-      <ts.Header2>{name}</ts.Header2>
-      TODO: show title
-      {socialList}
+    <s.TeamMember itemWidth={itemWidth}>
+      <s.TeamMemberInner>
+        <img src={avatar} width="200" />
+        <ts.Header2>{name}</ts.Header2>
+        <ts.Header3>{title}</ts.Header3>
+        {socialList}
+        {descriptionItem}
+      </s.TeamMemberInner>
     </s.TeamMember>
   );
 };
 
 TeamMember.propTypes = {
+  description: string,
+  itemWidth: number,
   name: string.isRequired,
   title: string.isRequired,
   avatar: string.isRequired,
-  social: object
+  social: object,
+  width: number
 };
 
 export default TeamMember;

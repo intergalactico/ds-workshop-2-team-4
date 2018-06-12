@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 /*
  * One styled-component can re-use styles from another. The TeamMember
@@ -9,8 +9,19 @@ import * as ts from '../Typography/styles';
 
 import colors from '../Colors/colorset';
 
+const getWidth = ({ itemWidth }) => {
+  if (!itemWidth) return;
+  return css`
+    ${`flex: 1 1 ${itemWidth}%`}
+  `;
+};
+
 export const TeamMember = styled.div`
+  display: flex;
+  justify-content: center;
   text-align: center;
+  padding: 2% 0;
+  ${getWidth}
 `;
 
 /*
@@ -20,7 +31,15 @@ export const TeamMember = styled.div`
  * elements.
  */
 export const Title = styled(ts.Header3)`
-  color: green;
+  height: 50px;
+`;
+
+export const TeamMemberInner = styled(ts.P)`
+  width: 200px;
+`;
+
+export const TeamMemberDescription = styled(ts.P)`
+  text-align: left;
 `;
 
 /*
