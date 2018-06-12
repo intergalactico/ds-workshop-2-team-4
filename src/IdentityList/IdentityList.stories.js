@@ -8,12 +8,42 @@ import TeamMember from 'TeamMember'
 import speaker from '../../assets/anne-jina.jpg';
 
 storiesOf('IdentityList', module)
+  .add('with one person per row', () => (
+    <IdentityList topic="Keynotes">
+      <IdentityListBlock itemWidth={100}>
+        <TeamMember
+          name="Jina Anna"
+          title="Senior Design Systems Lead at Amazon"
+          social={{
+            twitter: 'donaldducknl',
+          }}
+          avatar={speaker}
+        />
+        <TeamMember
+          name="Jina Anna"
+          title="Senior Design Systems Lead at Amazon"
+          social={{
+            twitter: 'donaldducknl',
+          }}
+          avatar={speaker}
+        />
+        <TeamMember
+          name="Jina Anna"
+          title="Senior Design Systems Lead at Amazon"
+          social={{
+            twitter: 'donaldducknl',
+          }}
+          avatar={speaker}
+        />
+      </IdentityListBlock>
+    </IdentityList>
+  ))
   .add('with two persons per row', () => (
     <IdentityList topic="Keynotes">
       <IdentityListBlock itemWidth={50}>
         <TeamMember
-          name="Nathan Curtis"
-          title="Co-founder of EightShapes"
+          name="Jina Anna"
+          title="Senior Design Systems Lead at Amazon"
           social={{
             twitter: 'donaldducknl',
           }}
@@ -50,8 +80,8 @@ storiesOf('IdentityList', module)
     <IdentityList topic="Keynotes">
       <IdentityListBlock itemWidth={33}>
         <TeamMember
-          name="Nathan Curtis"
-          title="Co-founder of EightShapes"
+          name="Jina Anna"
+          title="Senior Design Systems Lead at Amazon"
           social={{
             twitter: 'donaldducknl',
           }}
@@ -101,11 +131,11 @@ storiesOf('IdentityList', module)
     </IdentityList>
   ))
   .add('with descriptions', () => (
-    <IdentityList topic="Keynotes">
+    <IdentityList>
       <IdentityListBlock itemWidth={33}>
         <TeamMember
-          name="Nathan Curtis"
-          title="Co-founder of EightShapes"
+          name="Jina Anna"
+          title="Senior Design Systems Lead at Amazon"
           social={{
             twitter: 'donaldducknl',
           }}
