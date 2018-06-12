@@ -22,7 +22,7 @@ storiesOf('Section', module) // eslint-disable-line no-undef
     `)(() => (
       <Section>
         <SectionHeader>Test</SectionHeader>
-        <SectionText>Text inside the section (with typography).</SectionText>
-        <p>Text inside the section (without typography).</p>
+        <SectionText>Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). <a href={'https://hs.fi'}>Linkki</a></SectionText>
+        <SectionText>Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). Text inside the section (without typography). <a href={'https://hs.fi'}>Linkki</a></SectionText>
       </Section>
-  )));
+  )))
