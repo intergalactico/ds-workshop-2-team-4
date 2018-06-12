@@ -8,9 +8,10 @@ import Box from 'Box';
 import Button from 'Button';
 import Icon from 'Icon';
 import Section, { SectionHeader, SectionText } from 'Section';
+import TeamMember from 'TeamMember';
 import Typography from 'Typography';
 import IdentityList from 'IdentityList';
-import IdentityListBlock from 'IdentityList';
+import IdentityListBlock from 'IdentityListBlock';
 import MenuLink from 'MenuLink';
 import NavigationBar from 'NavigationBar';
 import Hero from 'Hero';
@@ -22,6 +23,7 @@ export {
   Section,
   SectionHeader,
   SectionText,
+  TeamMember,
   Typography,
   IdentityList,
   IdentityListBlock,

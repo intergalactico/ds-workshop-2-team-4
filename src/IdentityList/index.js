@@ -7,10 +7,12 @@ const IdentityList = (props) => {
   const topic = props.topic ? <s.IdentityListTopic>{props.topic}</s.IdentityListTopic> : null;
 
   return (
-    <s.IdentityList>
-      {topic}
-      {props.children}
-    </s.IdentityList>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <s.IdentityList>
+        {topic}
+        {props.children}
+      </s.IdentityList>
+    </div>
   )
 }
 
