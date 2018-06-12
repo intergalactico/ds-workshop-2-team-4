@@ -27,7 +27,10 @@ export const SectionInner = styled.div`
     font-size: 32px;
   }
   a {
-    color: aqua;
+    color: #e7d70c;
     text-decoration: none;
+  }
+  a:hover {
+    color: #f8e71c;
   }
 `

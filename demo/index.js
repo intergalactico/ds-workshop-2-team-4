@@ -22,7 +22,7 @@ const App = () => (
   <Router>
     <React.Fragment>
       <NavigationBar brand={{ link: "https://dsconference.com/", img: "../assets/dsconf-logo-small.png" }}>
-        <MenuLink active activeColor="cyan">
+        <MenuLink active activeColor="#e7d70c">
           <Link to="/">Home</Link>
         </MenuLink>
         <MenuLink>
