@@ -15,6 +15,7 @@ import IdentityListBlock from 'IdentityListBlock';
 import MenuLink from 'MenuLink';
 import NavigationBar from 'NavigationBar';
 import Hero from 'Hero';
+import Footer from 'Footer';
 
 export {
   Box,
@@ -29,5 +30,6 @@ export {
   IdentityListBlock,
   MenuLink,
   NavigationBar,
-  Hero
+  Hero,
+  Footer
 };

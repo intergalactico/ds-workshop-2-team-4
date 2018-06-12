@@ -18,6 +18,9 @@ export const Hero = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   ${setBg}
 `
 export const HeroTitle = styled(ts.Header1)`
