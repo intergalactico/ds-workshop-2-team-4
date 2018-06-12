@@ -9,6 +9,8 @@ export const NavigationBar = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: ${p => p.bgcolor ? p.bgcolor : 'none'};
+  position: fixed;
+  top: 0;
 `
 
 export const MenuLinks = styled.div`
