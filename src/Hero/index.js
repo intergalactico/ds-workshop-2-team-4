@@ -5,7 +5,7 @@ import { string } from 'prop-types';
 
 const Hero = (props) => {
   return (
-    <s.Hero>
+    <s.Hero background={props.background}>
       <s.HeroAligner>
         <s.HeroAlignerItem>
           <s.HeroTitle>{props.title}</s.HeroTitle>
@@ -23,7 +23,8 @@ const Hero = (props) => {
 Hero.propTypes = {
   title: string,
   subTitle: string,
-  subTitle2: string
+  subTitle2: string,
+  background: string
 };
 
 export default Hero

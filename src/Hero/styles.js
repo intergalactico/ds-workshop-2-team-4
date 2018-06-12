@@ -2,13 +2,22 @@ import styled, { css } from 'styled-components'
 import * as ts from '../Typography/styles.js';
 import * as but from '../Button/styles.js';
 
+const setBg = ({ background }) => {
+  if (!background) return;
+  return css`
+    ${`background-image: url('${background}')`};
+   
+  `;
+};
+
+
 export const Hero = styled.div`
   color: white;
   background: black;
-  
   text-align: center;
   display: flex;
   flex-direction: column;
+  ${setBg}
   
 `
 export const HeroTitle = styled(ts.Header1)`
