@@ -21,5 +21,5 @@ export const MenuLinks = styled.div`
 
 export const BrandLogo = styled.img`
   margin-left: 20px;
-  max-height: 80px;
+  max-height: 50px;
 `

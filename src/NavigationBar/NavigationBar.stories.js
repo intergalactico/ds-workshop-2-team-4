@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import NavigationBar from '.'
 import MenuLink from '../MenuLink'
-import logoimg from '../../assets/abstract-dark.png'
+import logoimg from '../../assets/dsconf-logo-small.png'
 import { withInfo } from '@storybook/addon-info'
 
 storiesOf('NavigationBar', module)
