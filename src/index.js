@@ -7,8 +7,12 @@
 import Box from 'Box';
 import Button from 'Button';
 import Icon from 'Icon';
-import Section, {SectionHeader, SectionText} from 'Section';
+import Section, { SectionHeader, SectionText } from 'Section';
 import Typography from 'Typography';
+import IdentityList from 'IdentityList';
+import IdentityListBlock from 'IdentityList';
+import MenuLink from 'MenuLink';
+import NavigationBar from 'NavigationBar';
 
 export {
   Box,
@@ -17,5 +21,9 @@ export {
   Section,
   SectionHeader,
   SectionText,
-  Typography
+  Typography,
+  IdentityList,
+  IdentityListBlock,
+  MenuLink,
+  NavigationBar
 };

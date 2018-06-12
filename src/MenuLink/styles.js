@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const MenuLink = styled.div`
   padding: 0 10px;
