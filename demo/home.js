@@ -15,6 +15,7 @@ const Home = () => {
   return (
     <div>
       <Hero background={bg}
+        buttonText="EVENT OVERVIEW"
         logoImage={logo}
         title="A DESIGN SYSTEMS CONFERENCE"
         subTitle="MARCH 14TH - 15TH"
